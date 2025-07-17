@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <title>Home - RCO Shop</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #0e0e0e;
+            color: #3399ff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 15px 30px;
+            background-color: #121212;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        nav a {
+            color: #3399ff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00ffff;
+        }
+
+        nav a.btn-povs {
+            padding: 8px 18px;
+            background-color: #3399ff;
+            color: white !important;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(51, 153, 255, 0.7);
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        nav a.btn-povs:hover {
+            background-color: #00ffff;
+            color: #121212 !important;
+        }
+
+        .content-wrapper {
+            margin-top: 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo-preise-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 50px;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        .preise {
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .preise h2 {
+            color: #3399ff;
+            margin-bottom: 10px;
+        }
+
+        .paket {
+            background-color: #1e1e1e;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 0 15px rgba(51, 153, 255, 0.8);
+            text-align: left;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .paket:hover {
+            border-color: #00ffff;
+            box-shadow: 0 0 20px #00ffff;
+        }
+
+        .paket-title {
+            color: #00ffff;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .logo-right img {
+            max-width: 150px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(51, 153, 255, 0.7);
+        }
+
+        .discord-link {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+
+        .discord-link a {
+            color: #7289da;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .discord-link a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-povs {
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            background-color: #3399ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(51, 153, 255, 0.7);
+            transition: background-color 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-povs:hover {
+            background-color: #00ffff;
+            color: #121212;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">RCO Shop</a>
+        <a href="https://discord.gg/PQQ2zjy5cG" target="_blank" class="btn-povs">Discord Join</a>
+    </nav>
+
+    <div class="content-wrapper">
+
+        <div class="logo-preise-container">
+
+            <div class="preise">
+                <h2>Preisliste</h2>
+
+                <div class="paket" tabindex="0">
+                    <div class="paket-title">🟥 R - PAKET</div>
+                    <p>══════════════</p>
+                    <p>✅ 100% Custom<br>
+                        ✅ Fullplate Weste / Normal Weste<br>
+                        ✅ Bandana / Volle Maske (Gratis dazu!)<br>
+                        ➥ <strong>5€</strong></p>
+                </div>
+
+                <div class="paket" tabindex="0">
+                    <div class="paket-title">🟨 S - PAKET</div>
+                    <p>══════════════</p>
+                    <p>✅ 100% Custom<br>
+                        ✅ Bandana / Volle Maske<br>
+                        ✅ Fullplate Weste / Normal Weste<br>
+                        ✅ Custom Torso nach Wahl! (Gratis dazu!)<br>
+                        ➥ <strong>9,99€</strong></p>
+                </div>
+
+                <div class="paket" tabindex="0">
+                    <div class="paket-title">🟩 L - PAKET</div>
+                    <p>══════════════</p>
+                    <p>✅ 100% Custom<br>
+                        ✅ Bandana + Volle Maske<br>
+                        ✅ Fullplate Weste / Normal Weste<br>
+                        ✅ Custom Torso nach Wahl!<br>
+                        ✅ Custom Hose nach Wahl!<br>
+                        ✅ Custom Mantel / Polo Shirt (Gratis dazu!)<br>
+                        ➥ <strong>19,99€</strong></p>
+                </div>
+
+                <a href="povs.html" class="btn-povs">Zur POVS-Seite</a>
+            </div>
+
+            <div class="logo-right">
+                <img src="https://media.discordapp.net/attachments/1350773775221657771/1395459457844117504/RCO_ANIMIERT.gif?ex=687a8665&is=687934e5&hm=a3cba52ed29e2ae1e0e75eccb15be9e6b381779b93664158d4d473cced90048a&=" alt="R Logo" />
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
